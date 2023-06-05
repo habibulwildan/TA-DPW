@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="./style/style.css" >
+    <title>fome</title>
+  </head>
+  <body class="body">
+    <!-- Header -->
+    <div class="header1">
+      <div class="logo">
+        <img src="./aset/img/logoBorobudur.png" alt="logo" >
+        <p>Boro <span>Budur</span></p>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+            <ul>
+              <li><a href="#sejara">Sejarah</a></li>
+              <li><a href="#even">Even</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Ticket Booking</a></li>
+          <li><a href="#">Evaluation</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Header End -->
+    <!-- herro section start -->
+    <div class="hero-fome">
+      <div class="content">
+      </div>
+    </div>
+    <!-- herro section end -->
+    <!-- <img src="./aset/img/gallery1 (12).jpg" class="header-fome" /> -->
+    <!-- header vidio end -->
+
+    <!-- sidebar & content-->
+    <!-- contend -->
+    <div class="content2">
+      <form action="#" method="get" onsubmit="return check_required();">
+        <h3>PEMESANAN TIKET KUNJUNGAN</h3>
+        <div class="input-box">
+          <label for="nama">Nama</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Masukkan Nama"
+          >
+          <small>error message</small>
+        </div>
+        <div class="input-box">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Masukkan Email"
+          >
+          <small>error message</small>
+        </div>
+        <div class="input-box">
+          <label for="tel">No.Telepon</label>
+          <input type="text" id="tel" name="tel" placeholder="XXX-XXXXXXXXX" >
+          <small>error message</small>
+        </div>
+        <div class="input-box">
+          <label for="date">Tanggal Kunjungan</label>
+          <input type="date" id="date" name="date" >
+          <small>error message</small>
+        </div>
+        <div class="input-box">
+          <label for="address">Alamat</label>
+          <textarea
+            name="address"
+            id="address"
+            placeholder="Masukkan Alamat"
+          ></textarea>
+          <small>error message</small>
+        </div>
+        <div class="input-box">
+          <p>Pembayaran</p>
+          <div class="cash-box">
+            <input type="radio" id="cash" name="pilihan" >
+            <label for="cash">Cash</label>
+          </div>
+          <div class="transfer-box">
+            <input type="radio" id="transfer" name="pilihan" >
+            <label for="transfer">Transfer Via : </label>
+            <select name="bank" id="bank">
+              <option value="1">BCA</option>
+              <option value="2">BRI</option>
+              <option value="3">BTN</option>
+              <option value="4">MANDIRI</option>
+            </select>
+          </div>
+          <small>error message</small>
+        </div>
+        <div class="input-box">
+          <p>
+            Centang kotak dibawah ini jika anda yakin data yang diisikan sudah
+            benar / Check the box below if you are sure the data entered is
+            corect
+          </p>
+          <input type="checkbox" id="confirm" >
+          <label for="confirm"
+            >Saya yakin data yang saya isikan sudah benar / I'm sure the data I
+            entered is correct</label
+          >
+          <small id="check-error">error message</small>
+        </div>
+        <div class="input-box">
+          <button type="submit">Kirim</button>
+        </div>
+      </form>
+
+      <!-- <div class="samping">
+        <img src="./aset/img/logoBorobudur.png" alt="logo-sampig" />
+      </div> -->
+      <!-- sidebar -->
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="https://youtu.be/Tx5y4FDq1X4">
+              1. Sejarah Candi Borobudur Indonesia
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/a9h35yKcXfQ">
+              2. Mengenal Thudong, Ritual jalan kaki biksu dari Thailand ke
+              Borobudur
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/xWd3hIrQGPI"
+              >3. Inilah tarif tiket Candi Borobudur Terbaru 2023
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/9MR58Xj7TZo"
+              >4. Jokowi Batalkan Wacana Tarif naik Candi Borobudur
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://radarjogja.jawapos.com/jogja-utama/2023/05/21/borobudur-land-destinasi-baru-dengan-empat-wahana-di-kabupaten-magelang/"
+            >
+              5. Borobudur Land, Destinasi Baru dengan Empat Wahana di Kabupaten
+              Magelang
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- sidebar end -->
+    </div>
+    <!-- conten & sedbar end-->
+
+    <!-- footer -->
+    <div class="Footer">
+      <div class="FooterFirst">
+        <p>
+          Borobudur Temple adalah sebuah website yang dikembangkan oleh
+          mahasiswa Teknik Informatika. Situs ini digunakan oleh wisatawan untuk
+          memesan tiket kunjungan ke Candi Borobudur. Dengan adanya website ini,
+          pengunjung sekarang dapat memesan tiket langsung melalui "Borobudur
+          Temple". Tujuan utama dari website ini adalah untuk memperkenalkan
+          sejarah Indonesia kepada masyarakat secara luas.
+        </p>
+      </div>
+      <div class="FooterSecond">
+        <div class="First">
+          <p>
+            Alamat : Jl,Badrawati, Kw. Candi Borobudur, Kec. Borobudur,
+            Kabupaten Magelang, Jawa Tengah
+          </p>
+          <p>Email : info@borobudurpark.co.id</p>
+        </div>
+        <div class="Second">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d506194.95336424466!2d110.199468!3d-7.613219!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a8cef5e6c0f59%3A0x4027a76e352eb60!2sKec.%20Borobudur%2C%20Kabupaten%20Magelang%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1685674736132!5m2!1sid!2sid"
+            width="350"
+            height="130"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div class="foter-copyright">
+        <p>&copy; Copyright 2023 | Created by b05</p>
+      </div>
+    </div>
+
+    <!-- java script -->
+    <script src="./Script/script.js"></script>
+  </body>
+</html>
