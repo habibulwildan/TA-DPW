@@ -1,4 +1,3 @@
-// const form = document.getElementById("form");
 const nama = document.getElementById("nama");
 const email = document.getElementById("email");
 const tel = document.getElementById("tel");
@@ -7,10 +6,10 @@ const address = document.getElementById("address");
 const pilihan = document.getElementsByName("pilihan");
 const confirm = document.getElementById("confirm");
 
-// untuk mengecek inputan kosong atau tidak
+// untuk mengecek inputan kosong atau tidak dan juga sebagai fungsi return utama ketika form di submit
 function check_required() {
   let tes = true;
-  // mengecek inputan nama
+  // mengecek inputan nama , validasi huruf 
   if (nama.value === "") {
     errorMsg(nama, "Nama tidak boleh kosong");
     tes = false;
@@ -21,7 +20,7 @@ function check_required() {
     successMsg(nama);
   }
 
-  // mengecek inputan email kosong atau tidak
+  // mengecek inputan email kosong atau tidak , validasi format email
   if (email.value === "") {
     errorMsg(email, "Email tidak boleh kosong");
     tes = false;
@@ -32,7 +31,7 @@ function check_required() {
     successMsg(email);
   }
 
-  // mengecek inputan no.telepon kosong atau tidak
+  // mengecek inputan no.telepon kosong atau tidak , validasi banyak digit, validasi angka
   if (tel.value === "") {
     errorMsg(tel, "No.telepon tidak boleh kosong");
     tes = false;
@@ -46,7 +45,7 @@ function check_required() {
     successMsg(tel);
   }
 
-  // untuk mengecek inputan tanggal kosong atau tidak
+  // untuk mengecek inputan tanggal kosong atau tidak, validasi tanggal masa depan
   if (date.value === "") {
     errorMsg(date, "Tanggal kunjungan tidak boleh kosong");
     tes = false;
@@ -57,6 +56,7 @@ function check_required() {
     successMsg(date);
   }
 
+  // untuk mengecek inputan alamat kosong atau tidak
   if (address.value === "") {
     errorMsg(address, "Alamat tidak boleh kosong");
     tes = false;
@@ -79,6 +79,7 @@ function check_required() {
     successMsg(pilihan[0].parentElement);
   }
 
+  // untuk mengecek inputan konfirmasi sudah dicentang atau tidak
   if (!confirm.checked) {
     errorMsg(confirm, "Konfirmasi bahwa data anda sudah benar ");
     tes = false;
@@ -153,7 +154,7 @@ function successMsg(input) {
 }
 
 // ============ Js cart Gallery===============
-document.querySelectorAll(".image-container img").forEach((Image) => {
+document.querySelectorAll(".img-container img").forEach((Image) => {
   Image.onclick = () => {
     document.querySelector(".popup-img").style.display = "block";
     document.querySelector(".popup-img img").src = Image.getAttribute("src");
